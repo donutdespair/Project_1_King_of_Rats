@@ -1,0 +1,169 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+  background-color: black;
+  font-family: 'Special Elite', cursive;
+}
+#startscreen
+{
+     margin: 0 auto;
+     width: 640px;
+     height: 700px;
+     position: relative;
+     top: 0;
+     background-image: url('charlie.jpg');
+     background-size: cover;
+     background-position: -450px;
+   }
+#instructions
+{
+     margin: 0 auto;
+     width: 640px;
+     height: 700px;
+     position: relative;
+     top: 0;
+     background-image: url('charlie.jpg');
+     background-size: cover;
+     background-position: -450px;
+   }
+
+.maincontainer
+{
+     margin: 0 auto;
+     max-width: 640px;
+     position: relative;
+     top: 0;
+}
+
+.display
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#startbutton{
+width: 400px;
+height: 200px;
+position: relative;
+top: 450px;
+left:  130px;
+background-color: lightblue;
+color: white;
+border: solid gray;
+border-radius: 20px;
+opacity: 1;
+font-size: 50px;
+font-family: 'Special Elite', cursive;
+}
+
+.scoreboard{
+width: 200px;
+height: 200px;
+top: 0px;
+left: -210px;
+background-color: transparent;
+border: dashed white;
+position: absolute;
+color: white;
+}
+#score{
+position: absolute;
+}
+#timer{
+position: absolute;
+top:  50%;
+}
+
+.rat {
+  position: absolute;
+  top: 20px;
+  background-image: url(prat.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
+
+}
+
+
+.smash{
+  background-image: url(splat.png);
+  width: 150px;
+  height: 150px;
+background-size: cover;
+}
+
+.hole{
+width: 200px;
+height: 200px;
+background-color: darkgrey;
+border-radius: 50%;
+}
+
+#hole1{
+
+position: absolute;
+top: 15px;
+left:  12px;
+}
+
+#hole2{
+position: absolute;
+top: 245px;
+left:  12px;
+}
+
+#hole3{
+position: absolute;
+top: 478px;
+left:  12px;
+}
+
+#hole4{
+position: absolute;
+top: 15px;
+left: 247px;
+}
+
+#hole5{
+
+position: absolute;
+top: 245px;
+left: 247px;
+}
+
+#hole6{
+
+position: absolute;
+top: 478px;
+left: 247px;
+}
+
+#hole7{
+
+position: absolute;
+top: 15px;
+left: 480px;
+}
+
+#hole8{
+
+position: absolute;
+top: 245px;
+left: 480px;
+}
+
+#hole9{
+
+position: absolute;
+top: 478px;
+left: 480px;
+}
+
