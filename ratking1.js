@@ -1,3 +1,6 @@
+//create smash div, hide, then show onclick
+
+
 //run js when document fully loaded
 $(document).ready(function() {
 console.log('script loaded');
@@ -52,7 +55,7 @@ $('.rat').hide().eq(randomRat).show().effect("shake");
 //a new jQuery object based on the element passed to it (the hidden rats)
 //the randomly chosen rat is shown and shakes
 //a new rat is created every 600ms
-
+setInterval(createPests, 1000);
 
 
 
@@ -60,6 +63,7 @@ $('.rat').hide().eq(randomRat).show().effect("shake");
 var ratOut = function() {
 $(".rat").fadeOut().hide();
   }
+setTimeout(ratOut, 500);
 //this function causes the rat to fade out and hide at 700ms after showing
 
 //////////Rats get SMAAAASHED///////
@@ -71,15 +75,16 @@ function theScore() {
   //console.log(score); //for testing
   $('#scorenum').text(" " + score);
   //the score text is added to the scoreboard
-  $(this).css('background-image', 'url(splat.png)');
+  $(this).addClass("smash");
+  //the rat gets the class "smash" which changes it to a pool of rat remains
   smashSound.play();
 //the splat sound plays
 var smashGone =
 setTimeout(function() {
-//the rats lhide so they can be shown again
-$('.rat').removeAttr('style');
+$(".rat").removeClass('smash');
+//the rats lose the smash class and hide so they can be shown again
 $(".rat").hide();
-      }, 300)
+      }, 500)
 };
 
 var gameTime = function () {
@@ -113,7 +118,7 @@ if (timer == 0) {
 //http://www.tannerhelland.com/9/clowns/
 
 /////Sounds/////
-//smash --> http://soundbible.com/1945-Smashing.html
+//http://soundbible.com/1945-Smashing.html
 
 
 //////Programming Sources Consulted//////
@@ -122,3 +127,11 @@ if (timer == 0) {
 //http://stackoverflow.com/questions/19244394/creating-a-timer-for-a-javascript-game-gives-undesirable-results
 //https://api.jqueryui.com/shake-effect/
 //http://ejohn.org/blog/how-javascript-timers-work/
+//http://www.phpied.com/files/location-location/location-location.html
+
+
+
+
+
+
+

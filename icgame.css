@@ -11,13 +11,13 @@ body{
 #startscreen
 {
      margin: 0 auto;
-     width: 640px;
-     height: 700px;
+     width: 675px;
+     height: 675px;
      position: relative;
      top: 0;
-     background-image: url('charlie.jpg');
+     background-image: url('title.jpg');
      background-size: cover;
-     background-position: -450px;
+
    }
 #instructions
 {
@@ -50,12 +50,12 @@ body{
 }
 
 #startbutton{
-width: 400px;
-height: 200px;
+width: 200px;
+height: 100px;
 position: relative;
 top: 450px;
-left:  130px;
-background-color: lightblue;
+left:  240px;
+background-color: indianred;
 color: white;
 border: solid gray;
 border-radius: 20px;
@@ -89,7 +89,7 @@ top:  50%;
   width: 160px;
   height: 160px;
   transition: top 1s, left 1s;
-
+  z-index: 10;
 }
 
 
@@ -98,12 +98,13 @@ top:  50%;
   width: 150px;
   height: 150px;
 background-size: cover;
+z-index: -1;
 }
 
 .hole{
 width: 200px;
 height: 200px;
-background-color: darkgrey;
+background-color: transparent;
 border-radius: 50%;
 }
 
@@ -136,7 +137,65 @@ border-radius: 50%;
   transition: top 1s, left 1s;
 
 }
+#rat4 {
+  position: absolute;
+  top: 20px;
+  background-image: url(4.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
 
+}
+
+#rat5 {
+  position: absolute;
+  top: 20px;
+  background-image: url(5.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
+
+}
+
+#rat6 {
+  position: absolute;
+  top: 20px;
+  background-image: url(6.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
+
+}
+
+#rat7 {
+  position: absolute;
+  top: 20px;
+  background-image: url(7.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
+
+}
+
+#rat8 {
+  position: absolute;
+  top: 20px;
+  background-image: url(8.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
+
+}
+
+#rat9 {
+  position: absolute;
+  top: 20px;
+  background-image: url(9.png);
+  width: 160px;
+  height: 160px;
+  transition: top 1s, left 1s;
+
+}
 
 
 #hole1{
