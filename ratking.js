@@ -1,3 +1,6 @@
+//create smash div, hide, then show onclick
+
+
 //run js when document fully loaded
 $(document).ready(function() {
 console.log('script loaded');
@@ -52,7 +55,7 @@ $('.rat').hide().eq(randomRat).show().effect("shake");
 //a new jQuery object based on the element passed to it (the hidden rats)
 //the randomly chosen rat is shown and shakes
 //a new rat is created every 600ms
-
+setInterval(createPests, 1000);
 
 
 
@@ -60,6 +63,7 @@ $('.rat').hide().eq(randomRat).show().effect("shake");
 var ratOut = function() {
 $(".rat").fadeOut().hide();
   }
+setTimeout(ratOut, 500);
 //this function causes the rat to fade out and hide at 700ms after showing
 
 //////////Rats get SMAAAASHED///////
@@ -123,3 +127,11 @@ if (timer == 0) {
 //http://stackoverflow.com/questions/19244394/creating-a-timer-for-a-javascript-game-gives-undesirable-results
 //https://api.jqueryui.com/shake-effect/
 //http://ejohn.org/blog/how-javascript-timers-work/
+
+
+
+
+
+
+
+
