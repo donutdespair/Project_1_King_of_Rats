@@ -8,6 +8,7 @@ body{
   background-color: black;
   font-family: 'Special Elite', cursive;
 }
+
 #startscreen
 {
      margin: 0 auto;
@@ -22,8 +23,8 @@ body{
 #instructions
 {
      margin: 0 auto;
-     width: 640px;
-     height: 700px;
+     width: 675px;
+     height: 675px;
      position: relative;
      top: 0;
      background-image: url('charlie.jpg');
@@ -90,15 +91,6 @@ top:  50%;
   height: 160px;
   transition: top 1s, left 1s;
   z-index: 10;
-}
-
-
-.smash{
-  background-image: url(splat.png);
-  width: 150px;
-  height: 150px;
-background-size: cover;
-z-index: -1;
 }
 
 .hole{
@@ -258,3 +250,4 @@ top: 478px;
 left: 480px;
 }
 
+body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-8/nat733.cur), progress !important;}

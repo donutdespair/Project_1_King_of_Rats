@@ -22,20 +22,18 @@ $(function() {
 $('.scoreboard').hide();
 $('.rat').hide();
 $('.display').hide();
-$('.hole').hide();
 //everything is hidden until start button is clicked
 $("#startbutton" ).click(function() {
 $(this).hide();
 //starts button hidden onclick, game shows, audio starts
 $("#startscreen" ).hide();
 $('.display').show();
-$('.hole').show();
 $('.scoreboard').show();
 $('#scorenum').text(" 0");
 gameTheme.play();
 intervalId = setInterval(gameTime, 1000);
-createInterval = setInterval(createPests, 1000);
-ratTimeout = setTimeout(ratOut, 500);
+createInterval = setInterval(createPests, 800);
+ratTimeout = setTimeout(ratOut, 900);
     });
 
 
@@ -46,7 +44,7 @@ var randomRat = Math.floor(Math.random() * $('.rat').length);
 //this chooses the number of the rat div to show
 //you have a random number between 0 and 1 * the number
 //of "rat" divs that is rounded down to the nearest whole number
-$('.rat').hide().eq(randomRat).show().effect("shake");
+$('.rat').hide().eq(randomRat).show();
     };
 //the random value is passed to the .eq method with constructs
 //a new jQuery object based on the element passed to it (the hidden rats)
@@ -58,7 +56,7 @@ $('.rat').hide().eq(randomRat).show().effect("shake");
 
 ///////////// Rats Disappear/////////////
 var ratOut = function() {
-$(".rat").fadeOut().hide();
+$(".rat").hide();
   }
 //this function causes the rat to fade out and hide at 700ms after showing
 
@@ -71,14 +69,15 @@ function theScore() {
   //console.log(score); //for testing
   $('#scorenum').text(" " + score);
   //the score text is added to the scoreboard
-  $(this).css('background-image', 'url(splat.png)');
+  $(this).css('background-image', 'url(blood.png)');
   smashSound.play();
 //the splat sound plays
+
 var smashGone =
 setTimeout(function() {
 //the rats lhide so they can be shown again
-$('.rat').removeAttr('style');
-$(".rat").hide();
+//removes the added css attr that changes the background to the splatter
+$('.rat').removeAttr('style').hide();
       }, 300)
 };
 
