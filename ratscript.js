@@ -18,36 +18,36 @@ var ratTimeout;
 
 ///////////Start Game//////////
 $(function() {
-  $('.scoreboard').hide();
-  $('.rat').hide();
-  $('.display').hide();
+    $('.scoreboard').hide();
+    $('.rat').hide();
+    $('.display').hide();
   //everything is hidden until start button is clicked
 $("#startbutton" ).click(function() {
-  $(this).hide();
+    $(this).hide();
   //starts button hidden onclick, game shows, audio starts
-  $("#startscreen" ).hide();
-  $('.display').show();
-  $('.scoreboard').show();
-  $('#scorenum').text(" 0");
-  gameTheme.play();
-  gameInterval = setInterval(gameTime, 1000);
-  createInterval = setInterval(createPests, 800);
-  ratTimeout = setTimeout(ratOut, 900);
+    $("#startscreen" ).hide();
+    $('.display').show();
+    $('.scoreboard').show();
+    $('#scorenum').text(" 0");
+    gameTheme.play();
+    gameInterval = setInterval(gameTime, 1000);
+    createInterval = setInterval(createPests, 800);
+    ratTimeout = setTimeout(ratOut, 900);
     });
 
 
 
 /////////// Rats Created///////////////
 var createPests = function(){
-  var randomRat = Math.floor(Math.random() * $('.rat').length);
-  //this chooses the number of the rat div to show
-  //you have a random number between 0 and 1 * the number
-  //of "rat" divs that is rounded down to the nearest whole number
-  $('.rat').hide().eq(randomRat).show().removeAttr('style').effect('bounce');
+    var randomRat = Math.floor(Math.random() * $('.rat').length);
+    //this chooses the number of the rat div to show
+    //you have a random number between 0 and 1 * the number
+    //of "rat" divs that is rounded down to the nearest whole number
+    $('.rat').hide().eq(randomRat).show().removeAttr('style').effect('bounce');
     };
-  //the random value is passed to the .eq method with constructs
-  //a new jQuery object based on the element passed to it (the hidden rats)
-  //the randomly chosen rat is shown and bounces a little
+    //the random value is passed to the .eq method with constructs
+    //a new jQuery object based on the element passed to it (the hidden rats)
+    //the randomly chosen rat is shown and bounces a little
 
 
 
