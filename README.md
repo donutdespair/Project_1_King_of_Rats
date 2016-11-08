@@ -18,7 +18,7 @@ I want to create a game based on a classic game with clear, simple rules.
 I want to create a game that is fun to play, a little challenging, and obsessively playable like those games that came on old Mac floppies (the actually floppy ones).
 
 **Wireframes and Pseudocode:**
-[](https://github.com/donutdespair/Project_1_King_of_Rats/blob/master/deploy.pdf "Wireframes and Planning")
+[Wireframes and Planning](https://github.com/donutdespair/Project_1_King_of_Rats/blob/master/deploy.pdf "Wireframes and Planning")
 
 
 
