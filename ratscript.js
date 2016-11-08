@@ -88,7 +88,7 @@ if (timer == 0) {
     clearInterval(createInterval);
     clearTimeout(ratTimeout);
 //conditions for winning and losing
-      if (score < 25) {
+      if (score < 35) {
           if (window.confirm("You lose, play again?")) {
               location.reload();
             }

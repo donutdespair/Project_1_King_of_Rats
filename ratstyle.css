@@ -15,7 +15,7 @@ body{
      width: 675px;
      height: 675px;
      position: relative;
-     top: 0;
+     top: -42px;
      background-image: url('media/background.jpg');
      background-size: cover;
    }
