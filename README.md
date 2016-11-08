@@ -7,7 +7,7 @@ GA WDI NYC Project One
 
 You have entered an abandoned subway station overrun with over caffeinated super rats. Smash (click) more than 30 in a minute to win.<br>
 ![](https://github.com/donutdespair/Project_1_King_of_Rats/blob/master/media/charlie1.gif)
-**MVP:**
+**MVP:**<br>
 
 A new, New York subway based take on the classic carnival game Whack-a-Mole. On start, a timer ticks down from 60 and rat images appear at random in specified locations (unmarked but where rats consistently appear). Points are awarded on successful clicks. You win if you can score more than 30 points in a minute. On win or lose, you have the option to restart.
 
