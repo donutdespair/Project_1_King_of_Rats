@@ -1,0 +1,202 @@
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: black;
+    font-family: 'EB Garamond', serif;
+    cursor: crosshair;
+}
+
+#startscreen{
+     margin: 0 auto;
+     width: 675px;
+     height: 675px;
+     position: relative;
+     top: 0;
+     background-image: url('media/background.jpg');
+     background-size: cover;
+   }
+#titletext{
+    font-family: font-family: 'EB Garamond', serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    top: 2em;
+    font-weight: bold;
+}
+.maincontainer{
+    margin: 0 auto;
+    max-width: 640px;
+    position: relative;
+    top: 0;
+}
+
+.display{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#startbutton{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 250px;
+    left:  240px;
+    background-color: indianred;
+    color: white;
+    border: solid gray;
+    border-radius: 20px;
+    opacity: 1;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+}
+
+.scoreboard{
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: -210px;
+    background-color: transparent;
+    border: dashed white;
+    position: absolute;
+    color: white;
+}
+#score{
+    position: absolute;
+    font-size: 25px;
+}
+#timer{
+    position: absolute;
+    font-size: 25px;
+    top:  50%;
+}
+
+.rat{
+    position: absolute;
+    top: 20px;
+    width: 160px;
+    height: 160px;
+    z-index: 10;
+}
+.hole{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+#rat1{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/1.png);
+    width: 160px;
+    height: 160px;
+}
+#rat2{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/2.png);
+    width: 160px;
+    height: 160px;
+}
+#rat3{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/3.png);
+    width: 160px;
+    height: 160px
+}
+#rat4{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/4.png);
+    width: 160px;
+    height: 160px
+}
+#rat5{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/5.png);
+    width: 160px;
+    height: 160px
+}
+#rat6{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/6.png);
+    width: 160px;
+    height: 160px
+}
+#rat7{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/7.png);
+    width: 160px;
+    height: 160px
+}
+#rat8{
+      position: absolute;
+      top: 20px;
+      background-image: url(media/8.png);
+      width: 160px;
+      height: 160px
+}
+#rat9{
+    position: absolute;
+    top: 20px;
+    background-image: url(media/9.png);
+    width: 160px;
+    height: 160px
+}
+#hole1{
+    position: absolute;
+    top: 15px;
+    left:  12px;
+}
+#hole2{
+    position: absolute;
+    top: 245px;
+    left:  12px;
+}
+#hole3{
+    position: absolute;
+    top: 478px;
+    left:  12px;
+}
+#hole4{
+    position: absolute;
+    top: 15px;
+    left: 247px;
+}
+#hole5{
+    position: absolute;
+    top: 245px;
+    left: 247px;
+}
+#hole6{
+    position: absolute;
+    top: 478px;
+    left: 247px;
+}
+#hole7{
+    position: absolute;
+    top: 15px;
+    left: 480px;
+}
+#hole8{
+    position: absolute;
+    top: 245px;
+    left: 480px;
+}
+#hole9{
+    position: absolute;
+    top: 478px;
+    left: 480px;
+}
+
