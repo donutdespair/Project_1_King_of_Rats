@@ -1,4 +1,4 @@
-# Project_1_King_of_Rats
+# Furry Slaughter: In the Chamber of Rodents
 GA WDI NYC Project One
 
 
